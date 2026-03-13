@@ -1,0 +1,207 @@
+/* .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+} */
+ /* Navbar Container */
+.navbar{
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 40px;
+
+    background:linear-gradient(90deg,#0f2027,#203a43,#2c5364);
+
+    /* Fixed navbar */
+    position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 70px;
+  width: 100%;
+
+  background-color: #0f2027;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 40px;
+
+  /* z-index: 9999; */
+    z-index:1000;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+/* Logo section */
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* Logo image */
+.logo-section img{
+    width:55px;
+    height:55px;
+    border-radius:10px;
+}
+
+/* Title */
+.logo-section h2{
+    font-size:28px;
+    font-weight:600;
+    cursor:pointer;
+    color:white;
+}
+
+/* Navigation buttons container */
+.nav-buttons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* General button styling */
+.nav-buttons button{
+    padding:8px 18px;
+    border-radius:25px;
+    border:1.5px solid #00cfff;
+    background:transparent;
+    color:#00cfff;
+    font-size:15px;
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    transition:all 0.3s ease;
+}
+
+/* Icons inside buttons */
+.nav-buttons button i{
+    font-size:14px;
+}
+
+/* Hover effect */
+.nav-buttons button:hover{
+    background:#00cfff;
+    color:black;
+    transform:scale(1.05);
+}
+
+/* Home button circular */
+.home-btn{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    padding:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Login button */
+.login-btn{
+    border-color:#4cafef;
+}
+
+/* Signup button */
+.signup-btn{
+    border-color:#00e676;
+}
+
+/* Logout button */
+.logout-btn{
+    border-color:#ff5252;
+}
+
+/* Responsive (optional but good) */
+@media (max-width:1000px){
+
+.navbar{
+padding:0 20px;
+}
+
+.logo-section h2{
+font-size:22px;
+}
+
+.nav-buttons{
+gap:8px;
+}
+
+.nav-buttons button{
+padding:6px 12px;
+font-size:14px;
+}
+
+}
+/* 
+.navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 70px;
+  width: 100%;
+
+  background-color: #0f2027;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 40px;
+
+  z-index: 9999;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-section img {
+  height: 45px;
+  border-radius: 8px;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-buttons button {
+  background: transparent;
+  border: 1px solid #00c6ff;
+  color: #00c6ff;
+  padding: 7px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-buttons button:hover {
+  background: #00c6ff;
+  color: black;
+} */

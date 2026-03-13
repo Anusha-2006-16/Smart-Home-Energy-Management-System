@@ -1,0 +1,22 @@
+.accordion-item {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: none;
+}
+
+.accordion-button {
+  background: transparent;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(190, 209, 214, 0.3);
+  color: white;
+}
+
+.accordion-body {
+  background: rgba(0,0,0,0.5);
+  color: #eee;
+}

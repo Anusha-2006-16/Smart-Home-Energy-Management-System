@@ -1,0 +1,43 @@
+.about-container {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.about-container h1 {
+  font-size: 36px;
+  color: #00c6ff;
+  margin-bottom: 20px;
+}
+
+.about-intro {
+  max-width: 800px;
+  margin: auto;
+  font-size: 17px;
+  margin-bottom: 60px;
+  color: #e0e0e0;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.features .feature-card h3{
+    color: rgb(206, 199, 199);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0,198,255,0.4);
+}

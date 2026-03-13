@@ -1,0 +1,142 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 80px;
+  background: #f8f9fa;
+}
+
+/* SCROLL PROGRESS BAR */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(to right, #0d6efd, #4e73df);
+  z-index: 2000;
+  transition: width 0.2s ease;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.navbar.shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar li {
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar li:hover {
+  color: #0d6efd;
+}
+
+.navbar li.active {
+  color: #0d6efd;
+}
+
+.navbar li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #0d6efd;
+  transition: 0.3s;
+}
+
+.navbar li:hover::after,
+.navbar li.active::after {
+  width: 100%;
+}
+
+/* SECTIONS */
+section {
+  min-height: 100vh;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HERO */
+#home {
+  background: linear-gradient(to right, #0d6efd, #4e73df);
+  color: white;
+  text-align: center;
+}
+
+/* ALTERNATING BACKGROUNDS */
+#about,
+#faqs {
+  background: white;
+}
+
+#testimonials,
+#contact {
+  background: #f1f3f5;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, #0d6efd, #4e73df);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}

@@ -1,0 +1,20 @@
+form input,
+form textarea {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid #00c6ff;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #e5e2e2;
+}
+
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #0072ff !important;
+}

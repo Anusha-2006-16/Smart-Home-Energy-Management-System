@@ -1,0 +1,37 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: 
+    linear-gradient(rgba(5, 10, 25, 0.85), rgba(5, 10, 25, 0.9)),
+    url("https://i.pinimg.com/originals/e3/89/c0/e389c0e7f0974037666275cbde7971bb.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section spacing */
+section {
+  padding: 80px 10%;
+}
+/* Force proper text visibility */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+p, span, li, label {
+  color: #e6f2ff;
+}
